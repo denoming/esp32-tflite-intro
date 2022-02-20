@@ -3,7 +3,6 @@
 ## Install nodejs
 
 ```shell
-# Install nodejs
 $ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 $ source ~/.bashrc
 $ nvm install v16.13.2
@@ -37,7 +36,11 @@ Run jupyer in terminal window:
 $ cd <root-folder-of-example>
 $ conda activate tf
 $ jupyter lab
-# Open train.ipynb file in jupyter notebook and train model
-$ xxd -i model.tflite > model.cc
+```
+
+Open train.ipynb file in jupyter notebook and train model.
+Then export model to appropriate format:
+```shell
+$ xxd -i -C model.tflite > model.cc
 ```
 
