@@ -1,16 +1,17 @@
 # TensorFlow Lite Micro Intro
 
-## Prerequisites
-
-Install TensorFlow Lite Micro for Espressif Chipsets:
-```shell
-$ cd ~/Downloads
-$ git clone https://github.com/espressif/tflite-micro-esp-examples
-$ cd <project-path>/lib/model
-$ ln -s $HOME/Downloads/tflite-micro-esp-examples/components/tflite-lib tflite-lib
-$ ln -s $HOME/Downloads/tflite-micro-esp-examples/components/esp-nn esp-nn
-```
-
 ## Train model (optional)
 
-Follow instruction in `lib/model/README.md`.
+Follow instruction in `model/README.md`.
+
+## Prepare
+
+### Clone TensorFlowLite micro components:
+
+```sh
+$ git clone --recurse-submodules https://github.com/espressif/tflite-micro-esp-examples.git $HOME/tflite-micro
+$ cd <project-path>
+$ mkdir -p components
+$ ln -s $HOME/tflite-micro/components/tflite-lib tflite-lib
+$ ln -s $HOME/tflite-micro/components/esp-nn esp-nn
+```
