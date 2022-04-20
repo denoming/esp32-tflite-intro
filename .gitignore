@@ -1,5 +1,8 @@
-*.tflite
-.ipynb_checkpoints
+model/*.tflite
+model/.ipynb_checkpoints
+
+components/esp-nn
+components/tflite-lib
 
 .pio
 .vscode/*
