@@ -5,7 +5,6 @@
 namespace tflite {
     class Model;
     class MicroInterpreter;
-    class ErrorReporter;
 
     template <unsigned int tOpCount>
     class MicroMutableOpResolver;
@@ -28,7 +27,6 @@ private:
     const tflite::Model* _model;
     tflite::MicroMutableOpResolver<10>* _resolver;
     tflite::MicroInterpreter* _interpreter;
-    tflite::ErrorReporter* _reporter;
     TfLiteTensor* _input;
     TfLiteTensor* _output;
 };

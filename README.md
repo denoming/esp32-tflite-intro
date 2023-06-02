@@ -1,17 +1,18 @@
-# TensorFlow Lite Micro Intro
+# ESP32 TFLITE Intro
 
 ## Train model (optional)
 
 Follow instruction in `model/README.md`.
 
+## Dependencies
+
+* ESP-IDF (ver. 4.4.3)
+* TensorFlow Lite Micro ([repository](https://github.com/espressif/tflite-micro-esp-examples.git))
+
 ## Prepare
 
-### Clone TensorFlowLite micro components:
-
-```sh
-$ git clone --recurse-submodules https://github.com/espressif/tflite-micro-esp-examples.git $HOME/tflite-micro
+* Clone dependencies using helpfull script:
+```shell
 $ cd <project-path>
-$ mkdir -p components
-$ ln -s $HOME/tflite-micro/components/tflite-lib tflite-lib
-$ ln -s $HOME/tflite-micro/components/esp-nn esp-nn
+$ bash scripts/setup.sh
 ```
