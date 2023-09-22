@@ -6,13 +6,29 @@ Follow instruction in `model/README.md`.
 
 ## Dependencies
 
-* ESP-IDF (ver. 4.4.3)
-* TensorFlow Lite Micro ([repository](https://github.com/espressif/tflite-micro-esp-examples.git))
+* Platform.io toolkit
+* ESP-IDF (ver. 5.1)
+* TensorFlow Lite Micro (git submodule)
+* ESP-NN (git submodule)
 
-## Prepare
+## Build
 
-* Clone dependencies using helpfull script:
+* Clone
 ```shell
-$ cd <project-path>
-$ bash scripts/setup.sh
+$ git clone <url>
+$ cd esp32-tflite-intro
+$ git submodule update --init --recursive
+```
+* Build
+```shell
+$ pio run -t menuconfig
+$ pio run
+```
+* Upload
+```shell
+$ pio run -t upload
+```
+* Connect
+```shell
+$ pio run -t monitor
 ```
