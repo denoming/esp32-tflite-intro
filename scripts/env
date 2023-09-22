@@ -1,4 +1,0 @@
-
-# TensorFlow Lite (URL+HASH)
-TFL_SRC="https://github.com/espressif/tflite-micro-esp-examples.git"
-TFL_SRC_HASH="11797d4"

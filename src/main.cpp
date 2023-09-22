@@ -4,6 +4,7 @@
 #include <freertos/task.h>
 
 #include <esp_log.h>
+#include <esp_random.h>
 
 static const char* TAG = "ESP32 TensorFlowLite Intro";
 
